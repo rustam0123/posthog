@@ -142,7 +142,7 @@ RUN apt-get update && \
     && \
     rm -rf /var/lib/apt/lists/* && \
     pip install uv~=0.7.0 --no-cache-dir && \
-    UV_PROJECT_ENVIRONMENT=/python-runtime uv sync --frozen --no-dev --no-cache --compile-bytecode --no-binary-package lxml --no-binary-package xmlsec
+    UV_PROJECT_ENVIRONMENT=/python-runtime uv sync --frozen --no-dev --no-cache --compile-bytecode --no-binary-package lxml --no-binary-package xmlsec --no-binary-package clickhouse-driver 
 
 ENV PATH=/python-runtime/bin:$PATH \
     PYTHONPATH=/python-runtime
