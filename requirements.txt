@@ -990,3 +990,5 @@ zstd==1.5.5.1
     # via -r requirements.in
 zxcvbn==4.4.28
     # via -r requirements.in
+
+user-agents==2.2.0
